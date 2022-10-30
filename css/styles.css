@@ -1,0 +1,572 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8); /* вторинний колір тексту;*/
+  --title-text-color: #212121; /* колір основного тексту #212121 */
+  --accent-color: #2196f3; /* акцент #18A0FB */
+  --pimary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.header-list {
+  display: flex; /***ставить елемент ul в один рядок***/
+}
+
+/* знімає крапки */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* робить усім li в класі лівий відступ крім першого */
+.header-list .item:not(:first-child) {
+  margin-left: 50px;
+}
+/* розтягує текст рядком */
+.page-header {
+  padding: 32px 0 0;
+  background: #ffffff;
+}
+
+.page-header .container {
+  display: flex; /* розтягує ,блоковий елемент рядком */
+  align-items: center; /*вирівнює по центру*/
+  border-bottom: 1px solid #ececec;
+}
+
+/***задає стиль логотипу***/
+.logo {
+  position: absolute;
+}
+.logotip {
+  margin-bottom: 24px;
+  margin-top: 25px;
+  margin-right: 93px;
+  text-decoration: none;
+}
+
+.logotip:hover {
+  text-decoration: underline #2196f3;
+}
+.logotip:focus {
+  outline: 2px solid #2196f3;
+}
+
+.logo-web {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+/***задає стилі студія,портфоліо,контакти***/
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-right: 50;
+  margin-top: 32;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+/***задає стилі номеру телефону***/
+.header-contacts {
+  margin-left: auto;
+}
+
+.tel {
+  color: #757575;
+  margin-left: 50px;
+}
+
+.mail {
+  color: #2196f3;
+}
+
+/* задає фон під заголовок і кнопку */
+.ordering {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-color: #2f303a;
+}
+
+/* Ефективні рішення для вашого бізнесу */
+.tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: center;
+  padding: 200px 452px 30px 452px;
+}
+/* Замовити послугу*****кнопка******* */
+.buton {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 32px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 692px;
+}
+
+/*особливості команди*/
+
+.description-list {
+  display: flex; /***ставить елемент ul в один рядок***/
+}
+
+.description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin: 0px 30px 10px 0px;
+  padding-top: 94px;
+}
+.description-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+.description-list .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/****************ABOUT**************/
+.about {
+  width: 1170px 0 px;
+}
+
+.work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.gallery-images {
+  width: 1170px;
+  display: flex;
+  flex-basis: calc((100% - 370px) / 3);
+  padding-bottom: 94px;
+}
+
+.work-img {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1058px;
+  margin-right: 30px;
+}
+
+/******team********/
+
+.team {
+  background: #f5f4fa;
+}
+
+.our-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.gallery-team {
+  display: flex;
+  padding-bottom: 94px;
+}
+.team-cards {
+  flex-basis: calc((100% - 270px) / 4);
+  margin-right: 30px;
+}
+
+.team-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-career {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-cards {
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1632px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 94px;
+}
+
+/***********footer****************/
+.footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2094px;
+  padding: 0;
+  background: #2f303a;
+}
+
+.maps {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 111px 1154px 9px 215px;
+  text-decoration: none;
+}
+.contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 141px 1154px 9px 215px;
+  text-decoration: none;
+}
+.maps:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.contact-link:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.maps:focus {
+  outline: 2px solid #2196f3;
+}
+.contact-link:focus {
+  outline: 2px solid #2196f3;
+}
+
+.logotip-second {
+  text-decoration: none;
+  padding: 60px 1240px 20px 215px;
+}
+.logotip-second:hover {
+  text-decoration: underline #2196f3;
+}
+.logotip-second:focus {
+  outline: 2px solid #2196f3;
+}
+.logo-web-second {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo-studio-second {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/*******************************porfolio************************************/
+.btn {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-portfolio {
+  width: 575px;
+  height: 54px;
+  left: 512px;
+  top: 174px;
+  display: flex;
+
+  font-weight: 500;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #212121;
+}
+
+.button-oll {
+  width: 73px;
+  height: 38px;
+  left: 515px;
+  top: 208px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 25px;
+  margin: 0px 8px 50px 300px;
+}
+
+.button-oll:hover {
+  outline: none;
+  border: none;
+  background: #2196f3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.button-oll:focus {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button-web {
+  width: 125px;
+  height: 38px;
+  left: 596px;
+  top: 208px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0px 8px 50px 0px;
+}
+.button-web:hover {
+  outline: none;
+  border: none;
+  background: #2196f3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.button-web:focus {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button-addition {
+  width: 112px;
+  height: 38px;
+  left: 729px;
+  top: 208px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0px 8px 50px 0px;
+}
+.button-addition:hover {
+  outline: none;
+  border: none;
+  background: #2196f3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.button-addition:focus {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button-design {
+  width: 103px;
+  height: 38px;
+  left: 849px;
+  top: 208px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0px 8px 50px 0px;
+}
+.button-design:hover {
+  outline: none;
+  border: none;
+  background: #2196f3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.button-design:focus {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button-marceting {
+  width: 130px;
+  height: 38px;
+  left: 960px;
+  top: 208px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0px 8px 50px 0px;
+}
+
+.button-marceting:hover {
+  outline: none;
+  border: none;
+  background: #2196f3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.button-marceting:focus {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/***************cards***************/
+.pro {
+  display: flex;
+}
+
+.projekt-cards {
+  list-style: none; /* знімає крапки */
+  display: flex; /***ставить елемент ul в один рядок***/
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+}
+
+.projekt-page {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projekt-page:nth-child(3n) {
+  margin-bottom: 0px;
+}
+
+.projekt-page:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.projekt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+  margin: 20px 24px 4px 24px;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.picture {
+  width: 370px;
+  height: 294px;
+  left: 1015px;
+  top: 1130px;
+}
