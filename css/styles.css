@@ -44,7 +44,6 @@ p {
 }
 /* розтягує текст рядком */
 .page-header {
-  padding: 32px 0 0;
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -154,20 +153,27 @@ p {
 
 /* Замовити послугу*****кнопка******* */
 .buton {
+  width: 216px;
+  height: 50px;
+  left: 692px;
+  top: 430px;
+  display: flex;
+
   font-weight: 700;
   font-size: 16px;
+  list-style-type: none;
   line-height: 1.9;
-  letter-spacing: 0.06em;
+  text-align: center;
+  
   color: #ffffff;
+
   display: flex;
   cursor: pointer;
-  padding: 10px 32px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   margin: 0 auto;
-  display: block;
-}
+  padding: 10px 32px;
+  }
 
 /*особливості команди*/
 
