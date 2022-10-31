@@ -301,6 +301,9 @@ p {
   padding-bottom: 94px;
 }
 
+.team-cards:nth-child(4) {
+  margin-right: -30px; /*4 елементу -30рх зправа */
+}
 /***********footer****************/
 .footer {
   width: 1600px;
