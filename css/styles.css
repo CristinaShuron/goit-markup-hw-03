@@ -167,7 +167,6 @@ p {
   border-radius: 4px;
   margin: 0 auto;
   display: block;
-  border-radius: 4 рх;
 }
 
 /*особливості команди*/
@@ -191,6 +190,7 @@ p {
   font-size: 14px;
   line-height: 1.7;
   color: #757575;
+  padding-bottom: 118px;
 }
 
 .description-list .item:not(:first-child) {
@@ -199,7 +199,7 @@ p {
 
 /****************ABOUT**************/
 .about {
-  width: 1170px 0 px;
+  width: 1170px 0px;
 }
 
 .work {
@@ -210,23 +210,33 @@ p {
   color: #212121;
   text-align: center;
   margin: 0px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .gallery-images {
   width: 1170px;
   display: flex;
-  flex-basis: calc((100% - 370px) / 3);
   padding-bottom: 94px;
+  padding-left: 0px;
+  margin: 0;
+  list-style: none;
 }
 
 .work-img {
   width: 370px;
   height: 294px;
-  left: 215px;
-  top: 1058px;
+  flex-basis: calc((100% - 370px) / 3);
+  text-transform: uppercase;
   margin-right: 30px;
+  text-align: center;
+}
+
+.work-img:nth-child(1) {
+  margin-left: 0px; /*першому елементу 215рх зліва */
+}
+
+.work-img:nth-child(3) {
+  margin-right: -30px; /* 3 елементу -30рх зправа */
 }
 
 /******team********/
@@ -249,7 +259,11 @@ p {
 
 .gallery-team {
   display: flex;
+  list-style: none;
   padding-bottom: 94px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .team-cards {
   flex-basis: calc((100% - 270px) / 4);
@@ -378,6 +392,15 @@ p {
   color: #212121;
 }
 
+.buton,
+.button-oll,
+.button-web,
+.button-addition,
+.button-design,
+.button-marceting {
+  border-radius: 8px;
+}
+
 .button-oll {
   width: 73px;
   height: 38px;
@@ -393,8 +416,7 @@ p {
   letter-spacing: 0.03em;
   color: #212121;
   padding: 6px 25px;
-  margin: 0px 8px 50px 300px;
-  border-radius: 4 рх;
+  margin: 0px 8px 0px 300px;
 }
 
 .button-oll:hover {
@@ -425,8 +447,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px 8px 50px 0px;
-  border-radius: 4 рх;
+  margin: 0px 8px 0px 0px;
 }
 .button-web:hover {
   outline: none;
@@ -456,8 +477,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px 8px 50px 0px;
-  border-radius: 4 рх;
+  margin: 0px 8px 0px 0px;
 }
 .button-addition:hover {
   outline: none;
@@ -487,8 +507,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px 8px 50px 0px;
-  border-radius: 4 рх;
+  margin: 0px 8px 0px 0px;
 }
 .button-design:hover {
   outline: none;
@@ -518,8 +537,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px 8px 50px 0px;
-  border-radius: 4 рх;
+  margin: 0px 8px 0px 0px;
 }
 
 .button-marceting:hover {
@@ -553,6 +571,7 @@ p {
 
 .projekt-page {
   height: 404px;
+  width: 370px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin-right: 30px;
@@ -572,6 +591,7 @@ p {
   font-size: 18px;
   line-height: 2;
   color: #212121;
+  margin: 20px 24px 4px;
 }
 
 .project-description {
@@ -579,8 +599,7 @@ p {
   font-size: 16px;
   line-height: 1.9;
   color: #757575;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0px 24px;
 }
 .picture {
   width: 370px;
